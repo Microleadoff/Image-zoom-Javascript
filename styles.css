@@ -1,0 +1,41 @@
+:root {
+  --color-gray-100: #a3a1a3;
+
+  --font-family: "Nunito", sans-serif;
+
+  --font-xl: 40px;
+  --font-bold: 700;
+  --space-xl: 32px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  text-align: center;
+  padding: var(--space-xl) 0;
+  font-size: var(--font-xl);
+}
+.container {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+}
+.img-zoom {
+  position: relative;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid var(--color-gray-100);
+  width: 40px;
+  height: 40px;
+}
+.img-zoom-result {
+  border: 1px solid var(--color-gray-100);
+  width: 350px;
+  height: 500px;
+}
